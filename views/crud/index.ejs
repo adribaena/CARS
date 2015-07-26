@@ -1,0 +1,51 @@
+<!-- Default home page -->
+
+<link type="text/css" href='http://sailsjs.org/styles/fonts.css' rel='stylesheet'/>
+<link type="text/css" href="css/basicos.css" rel="stylesheet"> 
+
+<script type="text/javascript">
+setTimeout(function sunrise () {
+    document.getElementsByClassName('header')[0].style.backgroundColor = '#118798';
+}, 0);
+</script>
+
+<div class="default-page">
+    <div class="header">
+        <h1 id="main-title" class="container"><%= __('Inicio aplicación CRUD') %></h1>
+    </div>
+    <div class="main container clearfix">
+        <ul class="getting-started">
+            <li class="clearfix">
+                <div class="step">
+                    <div class="sprite one"></div>
+                    <h3>Crear datos</h3>
+                    <p><a href="/user">pulsa aquí para generar datos</a></p>
+                </div>
+            </li>
+            <li class="clearfix">
+                <div class="step">
+                    <div class="sprite two"></div>
+                    <h3>listar datos</h3>
+                    <p><a href="">pulsa aquí para listar los datos</a></p>
+                </div>
+            </li>
+             <li class="clearfix">
+                <div class="step">
+                    <div class="sprite three"></div>
+                    <h3>editar datos</h3>
+                    <p><a href="">pulsa aquí para editar un dato</a></p>
+                </div>
+            </li>
+             <li class="clearfix">
+                <div class="step">
+                    <div class="sprite five"></div>
+                    <h3>eliminar datos</h3>
+                    <p><a href="">pulsa aquí para eliminar un dato</a></p>
+                </div>
+            </li>
+        </ul>
+        <div class="links">
+            <!-- <h3>Links</h3> -->
+        </div>
+    </div>
+</div>

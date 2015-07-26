@@ -6,6 +6,16 @@
  */
 
 module.exports = {
-	
-};
 
+	create: function (req, res, next) {
+		var params = req.params.all();
+	    Usuario.create(params ,function (err, user) {
+	        if ( err ) {
+	            return next(err);
+	        }
+	        else {
+	            return res.redirect('/');
+	        }       
+	    });
+	}
+}    

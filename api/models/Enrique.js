@@ -1,5 +1,5 @@
 /**
-* Usuario.js
+* Enrique.js
 *
 * @description :: TODO: You might write a short summary of how this model works and what it represents here.
 * @docs        :: http://sailsjs.org/#!documentation/models
@@ -8,17 +8,12 @@
 module.exports = {
 
   attributes: {
-    name: {
-      type :"string",
-      defaultsTo : "noname  "
-    },
-    age: {
-      type :"Integer",
-      defaultsTo : 15
-    }
-  },
-  beforeCreate: function(values,next){
-    next();
+
+    name : { type: 'String' },
+
+    edad : { type: 'Integer' },
+
+    peso : { type: 'Integer' }
   }
 };
 

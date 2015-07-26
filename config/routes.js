@@ -32,9 +32,29 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
+
+  /*
   '/': {
     view: 'homepage'
-  }
+  },
+  */
+  
+  '/': {
+    view: 'crud/index'
+  },
+  '/user': {
+    view: 'crud/user'
+  }, /*,
+  'GET /crud/index': 'UsuarioController.create',
+  'GET /usuario': 'UsuarioController.test'
+  */
+   'POST /user/crear':  {
+     controller    : 'Usuario',
+     action        : 'create' 
+   }
+
+
+
 
   /***************************************************************************
   *                                                                          *
