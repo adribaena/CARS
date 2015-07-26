@@ -24,6 +24,12 @@
     "sails-disk": "~0.10.0",
     "sails-mysql": "^0.11.0"
   },
+   "devDependencies": {
+    "browser-sync": "^2.7.5",
+    "gulp": "~3.8.11",
+    "gulp-load-plugins": "^0.10.0",
+    "tiny-lr": "^0.1.5"
+  },
   "scripts": {
     "debug": "node debug app.js",
     "start": "node app.js"
