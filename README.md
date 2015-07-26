@@ -19,6 +19,6 @@ Run at project [CARS] directory:
 
 `gulp`
 
-Load the web-app as indicated at project start message. Don't forget to activate live reload in the tab you are loading the web-app.
+Load the web-app in the browser as indicated at project start message. Don't forget to activate live reload in the tab you are loading the web-app.
 
 
