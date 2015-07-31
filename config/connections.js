@@ -19,6 +19,10 @@
  * http://sailsjs.org/#!/documentation/reference/sails.config/sails.config.connections.html
  */
 
+var mySQL = require('./local.js').mySQL;
+
+console.log('\n ', 'mySQL' + ' » ', mySQL);
+
 module.exports.connections = {
 
   /***************************************************************************
@@ -42,10 +46,10 @@ module.exports.connections = {
   ***************************************************************************/
   mySQL: {
     adapter: 'sails-mysql',
-    host: 'localhost',
-    user: 'baena',
-    password: '1234',
-    database: 'sailsdb'
+    host: mySQL.host,
+    user: mySQL.user,
+    password: mySQL.password,
+    database: mySQL.database
   },
 
   /***************************************************************************
